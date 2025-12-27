@@ -1,5 +1,63 @@
+/* --- AJUSTES GENERALES --- */
+
+:root {
+    --sa-primary-color: #1990d6;
+    --sa-secondary-color: #191919;
+    --sa-tertiary-color: #FFFFFF;
+    --sa-hover-color: #68c7fe;
+}
+
 * {
     margin: 0;
     padding: 0;
 }
 
+body {
+    font-family: 'Roboto';
+    background-color: var(--sa-tertiary-color);
+}
+
+/* --- NAVBAR --- */
+
+#sa-navbar {
+    /*  background-color: rgba(0, 0, 0, 0); */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em 3em;
+    background-color: #1990d6;
+    height: 3em;
+}
+
+.sa-logo {
+    height: 3em;
+}
+
+#sa-nav-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 10px;
+    list-style-type: none;
+    overlay: hidden;
+}
+
+#sa-nav-menu a {
+    text-decoration: none;
+    color: var(--sa-tertiary-color);
+}
+
+#sa-nav-menu a:hover {
+    color: var(--sa-hover-color);
+    transition: 0.3s;
+}
+
+.shop-icons i {
+    color: var(--sa-tertiary-color);
+    cursor: pointer;
+}
+
+#burger-menu {
+    display: none;
+}
