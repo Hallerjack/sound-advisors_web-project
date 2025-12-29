@@ -19,8 +19,7 @@ body {
 
 /* --- NAVBAR --- */
 
-#sa-navbar {
-    /*  background-color: rgba(0, 0, 0, 0); */
+#sa-nav-section {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -31,27 +30,23 @@ body {
 }
 
 .sa-logo {
-    height: 3em;
+    height: 3.5em;
 }
 
-#sa-nav-menu {
+.sa-navbar {
     display: flex;
     flex-direction: row;
-    justify-content: start;
-    gap: 10px;
+    justify-content: space-between;
+    gap: 20px;
     list-style-type: none;
-    overlay: hidden;
 }
 
-#sa-nav-menu a {
-    text-decoration: none;
-    color: var(--sa-tertiary-color);
+.sa-nav-menu {
+    display: flex;
+    flex-direction: row;
 }
 
-#sa-nav-menu a:hover {
-    color: var(--sa-hover-color);
-    transition: 0.3s;
-}
+
 
 .shop-icons i {
     color: var(--sa-tertiary-color);
