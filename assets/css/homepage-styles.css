@@ -1,10 +1,22 @@
 /* AJUSTES GENERALES */
 
 :root {
+    /* Colors */
     --sa-primary-color: #1990d6;
     --sa-secondary-color: #191919;
     --sa-tertiary-color: #FFFFFF;
     --sa-hover-color: #68c7fe;
+
+    /* Space */
+    --sa-lg-screen-height: 62em;
+
+    /* Typography */
+    --font-size-xxl: 3em;
+    --font-size-xl: 2.5em;
+    --font-size-lg: 2em;
+    --font-size-md: 1.3em;
+    --font-size-sm: 1em;
+    --font-size-xs: 0.5em;
 }
 
 * {
@@ -15,6 +27,32 @@
 body {
     font-family: 'Roboto';
     background-color: var(--sa-tertiary-color);
+}
+
+/* TYPOGRAPHY */
+
+h1 {
+    font-size: var(--font-size-xxl);
+}
+
+h2 {
+    font-size: var(--font-size-xl);
+}
+
+h3 {
+    font-size: var(--font-size-lg)
+}
+
+h4 {
+    font-size: var(--font-size-md);
+}
+
+p {
+ font-size: var(--font-size-sm);
+}
+
+small {
+    font-size: var(--font-size-xs);
 }
 
 /* NAVBAR */
@@ -44,7 +82,7 @@ body {
 
 .sa-nav-menu {
     display: flex;
-    gap: 10px;
+    gap: 20px;
     list-style-type: none;
     flex-direction: row;
 }
@@ -83,7 +121,7 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    height: 62em;
+    height: var(--sa-lg-screen-height);
 }
 
 .hero-1 {
@@ -104,4 +142,100 @@ body {
     background-color:blue;
     grid-column: 2 / 3;
     grid-row: 2 / 3;
+}
+
+/* FEATURED PRODUCTS */
+
+.sa-feat-prod-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    margin: 2em;
+    border-radius: 30px; 
+    background-color: var(--sa-secondary-color);
+    height: var(--sa-lg-screen-height);
+}
+
+/* --- Title & Subtitle ---*/
+
+.sa-feat-prod {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    line-height: 2em;
+    color: var(--sa-tertiary-color);
+}
+
+.sa-feat-prod h4 {
+    font-weight: 400;;
+}
+
+/* --- Feat. Product Image --- */
+
+.sa-feat-prod-img {
+    margin: 2em 0;
+
+}
+
+/* --- Buttons --- */
+
+.sa-feat-prod-btns {
+    display: flex;
+    gap: 20px;
+}
+
+.sa-btn-1 {
+    background-color: rgba(0, 0, 0, 0);
+    border: solid 1px #9d9d9d;
+    border-radius: 50px;
+    padding: 1em 2.5em;
+    color: var(--sa-tertiary-color);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.sa-btn-1:hover {
+    border: solid 1px white;
+    transition: 0.3s;
+}
+
+.sa-btn-2 {
+    background-color: var(--sa-tertiary-color);
+    border: none;
+    border-radius: 50px;
+    padding: 1em 2.5em;
+    color: var(--sa-secondary-color);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.sa-btn-2:hover {
+    background-color: #c8c8c8;
+    transition: 0.3s;
+}
+
+/* --- Prizes --- */
+
+.sa-prize-prod-section {
+    display: flex;
+    gap: 30px;
+}
+
+.sa-prize-prod {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sa-prize-5stars {
+    width: 150px;
+}
+
+.sa-logo-prize {
+    width: 200px;
 }
