@@ -1,4 +1,4 @@
-/* --- AJUSTES GENERALES --- */
+/* AJUSTES GENERALES */
 
 :root {
     --sa-primary-color: #1990d6;
@@ -17,7 +17,7 @@ body {
     background-color: var(--sa-tertiary-color);
 }
 
-/* --- NAVBAR --- */
+/* NAVBAR */
 
 #sa-nav-section {
     display: flex;
@@ -70,4 +70,38 @@ body {
     cursor: pointer;
     color: var(--sa-tertiary-color);
     font-size: 2em;
+}
+
+.item:hover {
+    transform: scale(1.2);
+    transition: 0.3s;
+}
+
+/* HERO */
+
+.sa-hero-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    height: 62em;
+}
+
+.hero-1 {
+    background-color: aquamarine;
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+
+}
+
+.hero-2 {
+    background-color:brown;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+
+}
+
+.hero-3 {
+    background-color:blue;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
 }
