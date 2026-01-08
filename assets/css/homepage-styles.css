@@ -30,7 +30,9 @@ body {
     background-color: var(--sa-tertiary-color);
 }
 
+/*-------------*/
 /* TYPOGRAPHY */
+/*-----------*/
 
 h1 {
     font-size: var(--font-size-xxl);
@@ -60,7 +62,9 @@ small {
     font-size: var(--font-size-xxs);
 }
 
+/*----------*/
 /* DIVIDER */
+/*--------*/
 
 hr {
     border: none;
@@ -70,7 +74,9 @@ hr {
     margin: 1em 0;
 }
 
+/*---------*/
 /* NAVBAR */
+/*-------*/
 
 #sa-nav-section {
     display: flex;
@@ -130,7 +136,9 @@ hr {
     transition: 0.3s;
 }
 
+/*-------*/
 /* HERO */
+/*-----*/
 
 .sa-hero-section {
     display: grid;
@@ -237,7 +245,9 @@ hr {
     margin-top: 2em;
 }
 
+/*--------------------*/
 /* FEATURED PRODUCTS */
+/*------------------*/
 
 .sa-feat-prod-section {
     display: flex;
@@ -246,6 +256,7 @@ hr {
     align-items: center;
     gap: 30px;
     margin: 2em;
+    padding: 5em 1em;
     border-radius: 30px; 
     background-color: var(--sa-secondary-color);
     height: var(--sa-lg-screen-height);
@@ -264,7 +275,9 @@ hr {
 }
 
 .sa-feat-prod h5 {
-    font-weight: 400;;
+    font-weight: 200;
+    width: 300px;
+    text-align: center;
 }
 
 /* --- Feat. Product Image --- */
@@ -333,7 +346,9 @@ hr {
     width: 150px;
 }
 
+/*------------*/
 /* CATALOGUE */
+/*----------*/
 
 /* .main-prod-grid */
 
@@ -477,3 +492,4 @@ to {
     transition: 0.3s;
 }
 
+/*--------*/
