@@ -6,6 +6,7 @@
     --sa-secondary-color: #191919;
     --sa-tertiary-color: #FFFFFF;
     --sa-hover-color: #68c7fe;
+    --sa-grey-color: #828282;
 
     /* Screens Height */
     --sa-lg-screen-height: 50em;
@@ -55,6 +56,7 @@ h4 {
 
 h5 {
     font-size: var(--font-size-sm);
+    font-weight: 400;
 }
 
 p {
@@ -236,7 +238,6 @@ hr {
 }
 
 .sa-hero-content h5 {
-    font-weight: 400;
     margin-top: 0.5em;
 }
 
@@ -597,7 +598,7 @@ to {
 /* Main container */
 
 .sa-sale-container {
-    position: absolute;
+    position: relative;
     overflow: hidden;
     height: var(--sa-md-screen-height);
     width: 100%;
@@ -621,7 +622,7 @@ to {
     z-index: 2;
 }
 
-/* Content */
+/* --- Content --- */
 
 .sa-sale-content {
     position: relative;
@@ -651,9 +652,54 @@ to {
     width: 200px;
 }
 
+/*-------------*/
+/* NEWSLETTER */
+/*-----------*/
 
+.sa-subs-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: var(--sa-sm-screen-height);
+}
 
+.submit-form {
+    margin-top: 2em;
+}
 
-.sa-sale-content {
+.input-submit {
+    border: solid 1px var(--sa-grey-color);
+    border-radius: 30px 0 0 30px;
+    padding: 1em 5em;
+    margin: 0;
+    
+}
 
+.btn-submit {
+    margin: 0;
+    padding: 1em 3em;
+    border: none;
+    background-color: var(--sa-primary-color);
+    color: var(--sa-tertiary-color);
+    text-transform: uppercase;
+    border-radius: 0 30px 30px 0;
+    cursor: pointer;
+    transition: background-color 0.4s ease-in-out;
+}
+
+.btn-submit:hover {
+    background-color: var(--sa-hover-color);
+}
+
+/*-----------------*/
+/* --- FOOTER --- */
+/*---------------*/
+
+.sa-footer {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    background-color: var(--sa-secondary-color);
+    height: var(--sa-md-screen-height);
 }
