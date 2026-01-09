@@ -7,8 +7,10 @@
     --sa-tertiary-color: #FFFFFF;
     --sa-hover-color: #68c7fe;
 
-    /* Space */
+    /* Screens Height */
     --sa-lg-screen-height: 50em;
+    --sa-md-screen-height: 40em;
+    --sa-sm-screen-height: 30em;
 
     /* Typography */
     --font-size-xxl: 5em;
@@ -585,4 +587,73 @@ to {
 .sa-art-link:focus-visible {
     outline: 2px solid #fff;
     outline-offset: 4px;
+}
+
+/*--------------*/
+/*--- SALES ---*/
+/*------------*/
+
+
+/* Main container */
+
+.sa-sale-container {
+    position: absolute;
+    overflow: hidden;
+    height: var(--sa-md-screen-height);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.sa-sale-container video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sa-sale-container::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+
+/* Content */
+
+.sa-sale-content {
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    line-height: 2em;
+    z-index: 3;
+    color: var(--sa-tertiary-color);
+}
+
+.sa-sale-content h5 {
+    font-weight: 400;
+    width: 600px;
+    margin-top: 0.5em;
+}
+
+.sa-sale-content p {
+    text-transform: uppercase;
+}
+
+.sa-sale-content button {
+    margin-top: 2em;
+    width: 200px;
+}
+
+
+
+
+.sa-sale-content {
+
 }
