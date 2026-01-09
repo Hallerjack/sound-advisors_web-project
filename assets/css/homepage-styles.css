@@ -536,14 +536,19 @@ to {
     justify-content: end;
     align-items: start;
     gap: 1em;
-    width: 350px;
-    height: 300px;
-    background-image: url(https://www.soundadvisors.cl/wp-content/uploads/2025/08/1700237234807-MKCYPKBNGF-1-5.webp);
-    background-size: 100%;
-    background-position: center;
+    width: 100%;
+    height: 600px;
     border-radius: 20px;
     overflow: hidden;
-    transition: background-size 0.4s ease-in-out;
+}
+
+.sa-art-img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease-in-out;
 }
 
 .sa-article-box::before {
@@ -552,10 +557,12 @@ to {
     inset: 0;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 2;
+    pointer-events: none;
+
 }
 
-.sa-article-box:hover {
-    background-size: 120%;
+.sa-article-box:hover .sa-art-img {
+    transform: scale(1.2);
 }
 
 .sa-art-title {
@@ -564,7 +571,7 @@ to {
     gap: 15px;
     color: var(--sa-tertiary-color);
     z-index: 2;
-    padding: 1em;
+    padding: 1.5em;
 }
 
 /* --- Link box --- */
