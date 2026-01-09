@@ -28,6 +28,7 @@
 body {
     font-family: 'Roboto';
     background-color: var(--sa-tertiary-color);
+    width: 100%;
 }
 
 /*-------------*/
@@ -69,7 +70,7 @@ small {
 hr {
     border: none;
     height: 1px;
-    background-color: var(--sa-tertiary-color);
+    background-color: #a7a7a7FF;
     width: 10%;
     margin: 1em 0;
 }
@@ -254,6 +255,7 @@ hr {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    width: auto;
     gap: 30px;
     margin: 2em;
     padding: 5em 1em;
@@ -271,6 +273,7 @@ hr {
     justify-content: center;
     gap: 20px;
     line-height: 2em;
+    width: 30%;
     color: var(--sa-tertiary-color);
 }
 
@@ -357,15 +360,14 @@ hr {
     justify-content: center;
     align-items: center;
     height: auto;
-    width: 100%;
-    padding: 3em 3em 3em 3em;
+    width: auto;
+    padding: 0 0 8em 0;
 }
 
 /* --- Title --- */
 
-.cards-block h1 {
-    font-size: 3em;
-    margin-bottom: 1em;
+.cards-block h3 {
+    margin-bottom: 0.5em;
  }
 
 /* --- Filters --- */
@@ -446,7 +448,6 @@ to {
 
 /*---- fin animacion --- */
 
-
 .img-prod-card {
     width: auto;
     height: 200px;
@@ -492,4 +493,89 @@ to {
     transition: 0.3s;
 }
 
-/*--------*/
+/*-----------*/
+/* - BLOG - */
+/*---------*/
+
+.sa-blog-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.sa-blog-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    width: 90%;
+    padding: 5em;
+}
+
+.sa-blog-section h3 {
+    margin-bottom: 0.5em;
+}
+
+.sa-divider hr {
+    width: 100%;
+    opacity: 50%;
+}
+
+.sa-art-container {
+    display: flex;
+    gap: 20px;
+}
+
+/* --- Article box --- */
+
+.sa-article-box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: start;
+    gap: 1em;
+    width: 350px;
+    height: 300px;
+    background-image: url(https://www.soundadvisors.cl/wp-content/uploads/2025/08/1700237234807-MKCYPKBNGF-1-5.webp);
+    background-size: 100%;
+    background-position: center;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: background-size 0.4s ease-in-out;
+}
+
+.sa-article-box::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+
+.sa-article-box:hover {
+    background-size: 120%;
+}
+
+.sa-art-title {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: var(--sa-tertiary-color);
+    z-index: 2;
+    padding: 1em;
+}
+
+/* --- Link box --- */
+
+.sa-art-link {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.sa-art-link:focus-visible {
+    outline: 2px solid #fff;
+    outline-offset: 4px;
+}
